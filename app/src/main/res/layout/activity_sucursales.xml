@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SucursalesActivity"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="203dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/direccion_bogota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sucursal_bogota"
+        app:srcCompat="@drawable/taller_3" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="209dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/direccionmedellin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sucursalmedellin"
+        app:srcCompat="@drawable/taller_2" />
+
+    <TextView
+        android:id="@+id/sucursal_bogota"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="@string/bogota"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sucursalmedellin"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:text="@string/medellin"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mailbogota" />
+
+    <TextView
+        android:id="@+id/direccionmedellin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="169dp"
+        android:text="@string/direccion_calle_9_8_7"
+        app:layout_constraintBottom_toTopOf="@id/Telefonomedellin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView5" />
+
+    <TextView
+        android:id="@+id/mailmedellin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/tienda_medellin_autopartes_com_co"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Telefonomedellin" />
+
+    <TextView
+        android:id="@+id/Telefonomedellin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="172dp"
+        android:text="@string/telefono_6041234567"
+        app:layout_constraintBottom_toTopOf="@id/mailmedellin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/direccionmedellin"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/direccion_bogota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="145dp"
+        android:text="@string/direccion_calle_63_24_12"
+        app:layout_constraintBottom_toTopOf="@+id/telefono_bogota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/telefono_bogota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="172dp"
+        android:text="@string/telefono_6011234567"
+        app:layout_constraintBottom_toTopOf="@id/mailbogota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direccion_bogota" />
+
+    <TextView
+        android:id="@+id/mailbogota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="62dp"
+        android:text="@string/mail_tienda_bogota_autopartes_com_co"
+        app:layout_constraintBottom_toTopOf="@id/sucursalmedellin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/telefono_bogota" />
+</androidx.constraintlayout.widget.ConstraintLayout>
